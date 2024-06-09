@@ -1,0 +1,53 @@
+# 32 - Escrever um programa que leia o código do produto escolhido do cardápio de uma lanchonete e a quantidade.
+# O programa deve calcular o valor a ser pago por aquele lanche, considere qua a execução somente será calculada um
+# pedido. O cardápio da lanchonete segue o padrão abaixo.
+# Especificação     Código      Preço
+# Cachorro quente   100         1.20
+# Bauru Simples     101         1.30
+# Bauru com Ovo     102         1.50
+# Hamburguer        103         1.20
+# Cheeseburger      104         1.70
+# Suco              105         2.20
+# Refrigerante      106         1.00
+
+print("100 - Cachorro Quente: R$ 1.20 ")
+print("101 - Bauru Simples:   R$ 1.30 ")
+print("102 - Bauru com Ovo:   R$ 1.50 ")
+print("103 - Hamburguer:      R$ 1.20 ")
+print("104 - Cheeseburguer:   R$ 1.70 ")
+print("105 - Suco:            R$ 2.20 ")
+print("106 - Refrigerante:    R$ 1.00 ")
+
+lanche = input("Informe o código do lanche desejado: ")
+quantidade = int(input("Informe a quantide desejada: "))
+
+if lanche == "100":
+    valor = 1.20 * quantidade
+    print(f"Você pediu: {quantidade} Cachorro Quante, o total a ser pago é de: R$ {valor}")
+
+elif lanche == "101":
+    valor = 1.30 * quantidade
+    print(f"Você pediu: {quantidade} Bauru Simples, o total a ser pago é de: R$ {valor}")
+
+elif lanche == "102":
+    valor = 1.50 * quantidade
+    print(f"Você pediu: {quantidade} Bauru com Ovo, o total a ser pago é de: R$ {valor}")
+
+elif lanche == "103":
+    valor = 1.20 * quantidade
+    print(f"Você pediu: {quantidade} Hamburguer, o total a ser pago é de: R$ {valor}")
+
+elif lanche == "104":
+    valor = 1.70 * quantidade
+    print(f"Você pediu: {quantidade} Cheeseburguer, o total a ser pago é de: R$ {valor}")
+
+elif lanche == "105":
+    valor = 2.20 * quantidade
+    print(f"Você pediu: {quantidade} Suco, o total a ser pago é de: R$ {valor}")
+
+elif lanche == "106":
+    valor = 1.00 * quantidade
+    print(f"Você pediu: {quantidade} Refrigerante, o total a ser pago é de: R$ {valor}")
+
+else:
+    print("Código informado inválido")
